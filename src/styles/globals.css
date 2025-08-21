@@ -1,0 +1,36 @@
+/* Глобальные переменные и сброс */
+:root {
+  --primary: #073a75;
+  --primary-dark: #3a6598;
+  --secondary: #ff6b6b;
+  --accent: #4ecdc4;
+  --light: #f8f9fa;
+  --dark: #2b2d42;
+  --gray: #6c757d;
+  --light-gray: #e9ecef;
+  --success: #4caf50;
+  --warning: #ff9800;
+  --error: #f44336;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --border-radius: 12px;
+  --navbar-height: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: var(--dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}

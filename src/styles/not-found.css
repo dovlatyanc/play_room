@@ -1,0 +1,21 @@
+.not-found {
+  text-align: center;
+
+}
+
+.not-found h1 {
+  font-size: 8rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.teapot-icon {
+  font-size: 10rem;
+  color: var(--secondary);
+  margin: 30px 0;
+}
