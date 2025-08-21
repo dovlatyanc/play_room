@@ -8,6 +8,7 @@ import './styles/game.css';
 import './styles/records.css';
 import './styles/not-found.css';
 import './styles/responsive.css';
+import './styles/roguelike.css';
 
 import Navbar   from './pages/NavBar/NavBar';
 import NotFound from './pages/notFound/NotFound';
@@ -15,6 +16,7 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import Game from './pages/Memory/Game';
 import Home from './pages/Home/Home';
 import Game2048 from './pages/Game2048/Game2048';
+import Roguelike from './pages/RogueLike/Roguelike';
 import TicTacToe from './pages/TicTacToe/TicTacToe';
 import { Auth } from './pages/Autentification/Auth';
 
@@ -24,6 +26,7 @@ import { Outlet } from "react-router-dom"
 
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+
 
 
 function NavbarWrapper(){
@@ -65,6 +68,11 @@ const router = createBrowserRouter([
             {
                 path: "/tictactoe",
                 element: <TicTacToe/>,
+                
+            },
+            {
+                path: "/roguelike",
+                element: <Roguelike/>,
                 
             },
                 {

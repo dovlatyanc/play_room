@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2dcdc;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  padding: 10px 0px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Игровое поле */
+.field-box {
+  border: 2px solid #d0d0d0;
+  margin-bottom: 20px;
+}
+
+.field {
+  position: relative;
+  background-color: #1a1a1a;
+}
+
+.field .tile {
+  position: absolute;
+  background-size: 100%;
+  background-image: url(/img/tile-.png);
+  z-index: 5;
+}
+
+.field .tileW {
+  background-image: url(/img/tile-W.png);
+}
+
+.field .tileE {
+  background-image: url(/img/tile-Enemy.png);
+  z-index: 10;
+}
+
+.field .tileP {
+  background-image: url(/img/tile-P.png);
+  z-index: 10;
+}
+
+.field .tileHP {
+  background-image: url(/img/tile-HP.png);
+  z-index: 9;
+}
+
+.field .tileSW {
+  background-image: url(/img/tile-SW.png);
+  z-index: 9;
+}
+
+.field .tile .health {
+  z-index: 11;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 3px;
+}
+
+.field .tileP .health {
+  background-color: #00ff00;
+}
+
+.field .tileE .health {
+  background-color: #ff0000;
+}
+
+/* Очистка обтекания */
+.cl {
+  clear: both;
+  display: block;
+}
+
+/* Оверлей для сообщений */
+.game-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.game-message {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: #2c3e50;
+}
+
+.game-message h2 {
+  margin: 0 0 20px 0;
+}
+
+.game-message button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.game-message button:hover {
+  background: #c0392b;
+}

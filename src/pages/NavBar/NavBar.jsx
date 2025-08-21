@@ -55,6 +55,12 @@ export default function Navbar() {
             <Link to="/tictactoe" className={location.pathname === '/tictactoe' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>
               {t('tictactoe')}
             </Link>
+           
+          </li>
+           <li>
+            <Link to="/roguelike" className={location.pathname === '/roguelike' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>
+              {t('roguelike')}
+            </Link>
           </li>
           <li>
             <Link to="/418" className={location.pathname === '/418' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>
