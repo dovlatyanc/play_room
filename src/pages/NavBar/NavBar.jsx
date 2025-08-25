@@ -62,17 +62,18 @@ export default function Navbar() {
               {t('418')}
             </Link>
           </li>
+          <div className="buttonAuth">
+            <Link to="/Auth" className={location.pathname === '/Auth' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>
+              {t('auth')}
+            </Link>
+          </div>
         </ul>
 
         {/* Переключатель языка */}
         <div className="navbar-language">
           <LanguageSwitcher />
         </div>
-         <div className="buttonAuth">
-            <Link to="/Auth" className={location.pathname === '/Auth' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>
-              {t('auth')}
-            </Link>
-          </div>
+         
       </div>
     </nav>
   );

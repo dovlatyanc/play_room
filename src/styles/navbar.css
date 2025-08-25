@@ -115,7 +115,7 @@
   font-size: 0.95rem;
 }
 .buttonAuth {
-  /* Основные свойства */
+
   display: inline-block;
   padding: 12px 24px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -144,4 +144,41 @@
 .buttonAuth:active {
   transform: translateY(1px);
   box-shadow: 0 2px 8px rgba(37, 117, 252, 0.3);
+}
+
+/* =============
+   Адаптация под мобильные устройства
+   ============= */
+
+@media (max-width: 768px) {
+  .buttonAuth {
+    margin-left: 16px;          /* Уменьшаем отступ слева */
+    padding: 10px 18px;         /* Чуть меньше отступы */
+    font-size: 15px;            /* Адаптивный размер шрифта */
+    width: auto;                /* Авто-ширина */
+    min-width: 120px;           /* Минимальная ширина для удобного нажатия */
+  }
+
+  .buttonAuth:hover {
+    transform: translateY(-1px); /* Меньше "подпрыгивания" на мобилке */
+  }
+}
+
+@media (max-width: 480px) {
+  .buttonAuth {
+    margin-left: 12px;          /* Ещё меньше отступ */
+    padding: 9px 16px;          /* Компактные отступы */
+    font-size: 14px;            /* Чуть мельче текст */
+    width: 100%;                /* На узких экранах — ширина 100% */
+    max-width: 160px;           /* Ограничиваем максимальную ширину */
+    margin-left: 0;             /* Убираем отступ, если в контейнере есть padding */
+  }
+
+  .buttonAuth:hover {
+    transform: none;            /* Отключаем hover-анимацию на сенсорных экранах */
+  }
+
+  .buttonAuth:active {
+    transform: scale(0.98);     /* Лёгкая усадка при нажатии — лучше для touch */
+  }
 }
