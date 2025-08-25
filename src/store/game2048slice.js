@@ -1,6 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit';
 
-// src/redux/gameSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 // Вспомогательная функция: найти пустые ячейки
@@ -82,8 +80,8 @@ const initialState = {
   gameWon: false,
 };
 
-const gameSlice = createSlice({
-  name: 'game',
+const game2048slice = createSlice({
+  name: 'game2048',
   initialState,
   reducers: {
     moveLeft: (state) => {
@@ -251,5 +249,5 @@ const gameSlice = createSlice({
   },
 });
 
-export const { moveLeft, moveRight, moveUp, moveDown, resetGame } = gameSlice.actions;
-export default gameSlice.reducer;
+export const { moveLeft, moveRight, moveUp, moveDown, resetGame } = game2048slice.actions;
+export default game2048slice.reducer;
