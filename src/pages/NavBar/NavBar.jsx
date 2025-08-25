@@ -36,11 +36,6 @@ export default function Navbar() {
               {t('about')}
             </Link>
           </li>
-           <li>
-            <Link to="/Auth" className={location.pathname === '/Auth' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>
-              {t('auth')}
-            </Link>
-          </li>
           <li>
             <Link to="/game" className={location.pathname === '/game' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>
               {t('games')}
@@ -73,6 +68,11 @@ export default function Navbar() {
         <div className="navbar-language">
           <LanguageSwitcher />
         </div>
+         <div className="buttonAuth">
+            <Link to="/Auth" className={location.pathname === '/Auth' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>
+              {t('auth')}
+            </Link>
+          </div>
       </div>
     </nav>
   );

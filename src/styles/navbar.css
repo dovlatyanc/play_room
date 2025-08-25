@@ -114,3 +114,34 @@
   align-items: center;
   font-size: 0.95rem;
 }
+.buttonAuth {
+  /* Основные свойства */
+  display: inline-block;
+  padding: 12px 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  box-shadow: 0 4px 12px rgba(37, 117, 252, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Эффект при наведении */
+.buttonAuth:hover {
+  background: linear-gradient(135deg, #5a0fc0 0%, #1e6bde 100%);
+  box-shadow: 0 6px 16px rgba(37, 117, 252, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Эффект при нажатии */
+.buttonAuth:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(37, 117, 252, 0.3);
+}

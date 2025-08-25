@@ -1,5 +1,4 @@
 
-// Подключаем все стили
 import './styles/globals.css';
 import './styles/layout.css';
 import './styles/navbar.css';

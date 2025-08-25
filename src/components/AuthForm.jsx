@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login, register } from '../store/authSlice';
-import '../styles/AuthForm.css'; // ← импортируем стили
+import '../styles/AuthForm.css'; 
 
 export default function AuthForm() {
   const [username, setUsername] = useState('');
