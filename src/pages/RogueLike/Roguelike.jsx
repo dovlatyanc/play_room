@@ -585,7 +585,7 @@ useEffect(() => {
 
     const interval = setInterval(() => {
       moveEnemies();
-    }, 1000);
+    }, 300);
 
     return () => clearInterval(interval);
   }, [gameOver, victory, moveEnemies]);
