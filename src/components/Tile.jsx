@@ -3,8 +3,8 @@
 const Tile = ({ value }) => {
   const tileStyle = {
     backgroundColor:
-      value === 2 ? '#eee4da' :
-      value === 4 ? '#ede0c8' :
+      value === 2 ? '#a49e9eff' :
+      value === 4 ? '#fee3b1ff' :
       value === 8 ? '#f2b179' :
       value === 16 ? '#f59563' :
       value === 32 ? '#f67c5f' :
